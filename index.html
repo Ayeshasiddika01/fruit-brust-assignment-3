@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-- tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font:Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+      </style>
 </head>
-<body>
-    <header>
 
+<body class=".font-lato">
+    <header class="container mx-auto">
+<nav class="my-12">
+    <div class="navbar bg-[#F85559] rounded-full flex justify-between py-8 px-12 items-center mx-12">
+        <div class="">
+            <ul class="flex gap-8 text-white tex-xl">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All Fruits</a></li>
+            </ul>
+        </div>
+       
+        <!-- logo -->
+        <div class="navbar-center flex gap-4">
+            <div>
+                <img src="images/logo.png" alt="">
+            </div>
+          <h2 class=" text-4xl font-semibold text-white">Fruit Burst</h2>
+        </div>
+        <!-- search button -->
+        <div class="flex w-96 justify-between bg-white rounded-full navbar-end">
+            <p class="text-sm p-4 ">Search here</p>
+          <button class="btn btn-ghost btn-circle p-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+          
+        </div>
+       </div>
+      
+</nav>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
