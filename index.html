@@ -37,7 +37,7 @@
 <body class=".font-lato">
     <header class="container mx-auto">
         <nav class="my-12">
-            <div class="navbar bg-[#F85559] rounded-full flex justify-between py-8 px-12 items-center mx-12">
+            <div class="navbar bg-[#F85559] rounded-full lg:flex justify-between py-8 px-12 items-center ">
                 <div class="">
                     <ul class="flex gap-8 text-white tex-xl">
                         <li><a href="">Home</a></li>
@@ -69,12 +69,12 @@
             </div>
         </nav>
         <!-- banner section -->
-        <div class="flex flex-col-1 lg:flex-row relative carousel w-full">
+        <div class="flex flex-col lg:flex-row relative carousel w-full">
             <!-- slider 1 -->
             <div id="slide1" class="carousel-item relative w-full my-20">
                 <img src="./images/banner1.png" class="w-full" />
                 <div class=" absolute hero-overlay bg-opacity-60 "></div>
-                <div class="absolute  text-white text-center py-40 px-96 ">
+                <div class=" absolute  text-white text-center py-40 px-96 ">
                     <h1 class="mb-6 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
                     <p class="mb-8">We supply highly quality organic products</p>
                     <button class=" rounded-lg text-xl text-white py-5 px-8 bg-fruit-primary">Shop Now</button>
@@ -266,7 +266,7 @@
         </section>
         <!-- team section -->
         <section class="mt-36">
-            <div class="hero   min-h-[690px]" style="background-image: url(./images/team.png);">
+            <div class="hero rounded-lg  min-h-[690px]" style="background-image: url(./images/team.png);">
                 <div class="hero-overlay"></div>
                 <div class=" text-center text-neutral-content">
                     <div class="mt-52">
@@ -433,9 +433,35 @@
         </section>
 
     </main>
-    <footer>
-
-    </footer>
+    <footer class="footer mt-36 footer-center p-10 bg-black text-primary-content py-36">
+        <div class="navbar-center flex gap-4">
+            <div>
+                <img src="./images/logo.png" alt="">
+            </div>
+            <h2 class=" text-4xl font-semibold text-white">Fruit Burst</h2>
+        </div>
+        <div class="">
+            <ul class="flex gap-8 text-white tex-xl">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All Fruits</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">My Account</a></li>
+            </ul>
+        </div>
+        <div class="flex text-4xl gap-10">
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-apple" style="color: #ffffff;"></i>
+        </div>
+        
+          
+        
+      </footer>
 </body>
 
 </html>
